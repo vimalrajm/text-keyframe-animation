@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+<body>
+    <img src="./ceiling-lamp.svg" alt="">
+    <h1>vimal</br>raj m</h1>
+</body>
+<style>
+    body {
+        background: #26de81;
+        height: 100vh;
+        font-family: Arial;
+    }
+    h1,
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 100px;
+        color: honeydew;
+        letter-spacing: 20px;
+        animation: float 3s ease-in-out alternate infinite;
+    }
+
+    img {
+        height: 30vh;
+        transform-origin: top center;
+        animation: float-img 3s ease-in-out alternate infinite;
+    }
+
+    @keyframes float {
+        from {
+            transform: rotate(5deg);
+            text-shadow: 20px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        to {
+            transform: rotate(-5deg);
+            text-shadow: -20px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    @keyframes float-img {
+        from {
+            transform: rotate(-5deg);
+        }
+
+        to {
+            transform: rotate(5deg);
+        }
+    }
+</style>
+</html>
